@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+        <div>Here I am {displayData} </div>
+        <div>CHECKBOX</div>
+        <lightning-input type='checkbox' label='Click to see data' onclick={handleClick}></lightning-input>
+        <template if:true={isChecked}>
+            <lightning-input label='Input Text' onchange={handleInputChange}></lightning-input>
+
+        </template>
+
+    </lightning-card>
+</template>
